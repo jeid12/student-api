@@ -1,0 +1,28 @@
+### Get all students
+GET http://localhost:3000/students
+
+### Get one student by ID
+GET http://localhost:3000/students/1
+
+### Create a student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@1example.com",
+  "course": "Mathematics"
+}
+
+### Update a student
+PUT http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "name": "robert",
+  "email": "updated@example.com",
+  "course": "Physics"
+}
+
+### Delete a student
+DELETE http://localhost:3000/students/1
